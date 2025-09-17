@@ -18,17 +18,18 @@ import { useTranslation } from '../common/components/LocalizationProvider';
 import Loader from '../common/components/Loader';
 import { errorsActions } from '../store';
 
-const currentServer = `${window.location.protocol}//${window.location.host}`;
+//const currentServer = `${window.location.protocol}//${window.location.host}`;
+const currentServer = 'https://drivesathi.tnvconsult.com';
 
 const officialServers = [
   currentServer,
-  'https://demo.traccar.org',
-  'https://demo2.traccar.org',
-  'https://demo3.traccar.org',
-  'https://demo4.traccar.org',
-  'https://server.traccar.org',
-  'http://localhost:8082',
-  'http://localhost:3000',
+ // 'https://demo.traccar.org',
+ // 'https://demo2.traccar.org',
+ // 'https://demo3.traccar.org',
+ // 'https://demo4.traccar.org',
+ // 'https://server.traccar.org',
+ // 'http://localhost:8082',
+ // 'http://localhost:3000',
 ].filter((value, index, self) => self.indexOf(value) === index);
 
 const useStyles = makeStyles()((theme) => ({
